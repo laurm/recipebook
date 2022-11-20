@@ -1,9 +1,8 @@
-import React, { useState, useEffect, useRef, useCallback } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import RecipeList from "./RecipeList";
 import RecipeEdit from "./RecipeEdit";
 import "../css/app.css";
 import { v4 as uuidv4 } from "uuid";
-import axios from "axios";
 
 export const RecipeContext = React.createContext();
 const LOCAL_STORAGE_KEY = "cookingReact.recipes";
